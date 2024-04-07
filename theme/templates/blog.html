@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="hfeed">
+  {% for post in posts %}
+  <div class="article">
+    <div class="left">
+      <p class="published">{% if post.date is defined %}
+            {{ post.created|strftime("%b %d, %Y") }} &mdash;
+       {% endif %}</p>
+      <address class="vcard author">&#8212; Sébastien Le Callonnec</address>
+      <p class="tags"><a rel="tag" href="http://www.weblogism.com/category/emacs/">Emacs</a>, <a rel="tag" href="http://www.weblogism.com/category/coding/">To Kill a CodingBird</a></p>
+    </div>
+
+    <div class="entry-content">
+      <h2 class="entry-title"><a rel="bookmark" href="{{ url_for("posts", slug=post.slug) }}">{{ post.title }}</a></h2>
+      {{ post.html|safe }}
+    </div>
+
+    <div style="clear: left">&nbsp;</div>
+    <div class="divider"><img src="//www.weblogism.com/images/1.gif" width="400" height="1" alt="---" title="" /></div>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,218 @@
+/* base
+----------------------------------------------- */
+
+body {
+  margin: 0;
+  padding: 0;
+  font: normal normal 12px/17px "DejaVu Sans", "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", Times, "Times New Roman",serif;
+  color: #666;
+  background-color: #fff;
+}
+
+#wrapper {
+  width: 1200px;
+  margin-left: 145px;
+  margin-right: auto;
+}
+
+#head {
+  margin-bottom: 85px;
+}
+
+#head h1 {
+  background: url(/images/banner.png) no-repeat top left;
+  width: 295px;
+  height: 73px;
+}
+
+#head h1 a:link {
+  width: 295px;
+  height: 73px;
+  display:block;
+}
+
+#head h1 span {
+  width: 295px;
+  height: 73px;
+  display:none;
+}
+
+#content {
+  margin-right: 245px;
+  width: 950px;
+}
+
+#sidebar-1 {
+  float: right;
+  width: 200px;
+  margin-left: 45px;
+}
+
+#sidebar-1 h2 {
+  font: 18px/24px 'Merriweather',serif normal normal;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+#sidebar-2 {
+  float: right;
+}
+
+a:link, a:visited, a:hover, a:active {
+/*  font-weight: bolder;*/
+  color: #666;
+  text-decoration: none;
+/*  border-bottom: 1px dotted #000;*/
+}
+
+.entry-content {
+  margin-left: 165px;
+}
+
+.entry-content p {
+  font-family: 'Merriweather', serif;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.left {
+  /*margin-top: 14px;*/
+  float: left;
+  width: 147px;
+  text-align: right;
+}
+
+.article {
+  clear: left;
+ /* margin-top: 40px;*/
+}
+
+.article h2, h2#comment {
+  font: 24px/26px 'PT Sans',sans-serif normal normal;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: normal;
+}
+
+.article h3 {
+  margin: 0; padding: 0;
+  font-size: 14px;
+  margin-top: 30px;
+  line-height: 0.05em;
+  padding-bottom: 0;
+  margin-bottom: -4px;
+}
+
+.article a:link, .article a:visited,
+.article a:hover, .article a:active {
+  color: #615547;
+}
+
+.article p a:link, .article p a:visited,
+.article p a:hover, .article p a:active {
+  text-decoration: underline;
+}
+
+.published {
+  font: 1.2em/1.2em Georgia,"Times New Roman",Times,serif normal normal;
+  font-weight: bolder;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+p.published {
+  margin-top: 3px;
+}
+
+.tags {
+  font: 0.8em/1.1em Georgia,"Times New Roman",Times,serif normal normal;
+  letter-spacing: 1px;
+}
+
+a[hreflang]:after {
+content:"\A0["attr(hreflang)"]";
+font-weight: normal;
+}
+
+blockquote[cite]:after {
+	content:"\A0quote from: ["attr(cite)"]";
+	display: block;
+	width: auto;
+	font: 8pt Courier, monospace;
+	color: #6495ED;
+	border-top: 1px dotted #9BF;
+	text-align: left;
+	padding: 2px;
+	margin-top: 5px;
+}
+
+.older {
+  float:left;
+  font: 0.8em/1.1em Georgia,"Times New Roman",Times,serif normal normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.newer {
+  float: right;
+  font: 0.8em/1.1em Georgia,"Times New Roman",Times,serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.category_list, .section_list {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 40px;
+}
+.category_list li, .section_list li  {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  margin-bottom: 2px;
+}
+
+/** FOR THE SHADOW **/
+/** FROM ALISTAPART, Sergio Villarreal, http://www.alistapart.com/articles/cssdropshadows/ **/
+
+.img-shadow {
+  float:left;
+  background: url(/images/shadow.gif) no-repeat bottom right;
+  margin: 10px 0 0 5px;
+ }
+
+.img-shadow img {
+  display: block;
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #a9a9a9;
+  margin: -6px 6px 6px -6px;
+  padding: 4px;
+}
+
+.author {
+  font-style: italic;
+  font-size: 10px;
+}
+
+div#copyright {
+  margin-top: 45px;
+  margin-bottom: 15px;
+}
+
+div#copyright p {
+  font-size: 7.5pt;
+  line-height: 9pt;
+  margin: 0;
+  text-align: center;
+}
+
+.zg_div {margin:0px 5px 5px 0px; width:117px;}
+.zg_div_inner {border: solid 1px #000000; background-color:#ffffff;  color:#666666; text-align:center; font-family:arial, helvetica; font-size:11px;}
+.zg_div a, .zg_div a:hover, .zg_div a:visited {color:#3993ff; background:inherit !important; text-decoration:none !important;}
+
+address {
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
